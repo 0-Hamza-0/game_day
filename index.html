@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#13294b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="AI Game Day">
+  <title>Family AI Game Day - Team 468</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <h1>Family AI Game Day</h1>
+        <p>A family chooses the fun. The app hosts it and the AI judges fairly.</p>
+      </div>
+    </div>
+    <div class="team-badge" id="teamBadge" title="Official team identity">Team 468 | Code: JLWEO</div>
+  </header>
+
+  <nav class="stepper" id="stepper" aria-label="Game steps">
+    <button data-go="1"><b>1</b><span>Choose a game</span></button>
+    <button data-go="2"><b>2</b><span>Players &amp; teams</span></button>
+    <button data-go="3"><b>3</b><span>Rules &amp; ready</span></button>
+    <button data-go="4"><b>4</b><span>Round in play</span></button>
+    <button data-go="5"><b>5</b><span>AI judge results</span></button>
+    <button data-go="6"><b>6</b><span>Final results</span></button>
+  </nav>
+
+  <main id="main">
+    <section class="screen" data-screen="1" id="s1"></section>
+    <section class="screen" data-screen="2" id="s2"></section>
+    <section class="screen" data-screen="3" id="s3"></section>
+    <section class="screen" data-screen="4" id="s4"></section>
+    <section class="screen" data-screen="5" id="s5"></section>
+    <section class="screen" data-screen="6" id="s6"></section>
+  </main>
+
+  <footer class="foot">Team 468 | Code: JLWEO · Standalone app v2.1 · The AI judge runs on this device; videos are never uploaded.</footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="flash" class="flash" aria-hidden="true">🦅</div>
+
+  <script src="rules.js"></script>
+  <script src="judge.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
